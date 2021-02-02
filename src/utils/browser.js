@@ -17,3 +17,11 @@ export function classNameBuilder(classesToBuild, className = '') {
 
   return className;
 }
+
+export function isArray(o) {
+  return o && typeof o === 'object' && o.constructor === Array;
+}
+
+export function isObj(o) {
+  return o && typeof o === 'object' && o.constructor === Object;
+}

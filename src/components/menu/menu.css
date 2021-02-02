@@ -10,14 +10,14 @@
   color: #000000;
   font-weight: bold;
   margin-top: 20px;
+  font-size: 13px;
 }
 
 .app-menu-list {
   margin-top: 20px;
   line-height: 20px;
-  font-size: 14px;
 }
 
-.app-menu-list :first-child {
+.app-menu-list li:first-child {
   color: #ffffff;
 }
