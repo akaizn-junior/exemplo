@@ -3,6 +3,11 @@ import { h } from 'preact';
 
 import './navbar.css';
 
+// components
+import {
+  Menu
+} from '../';
+
 export function Navbar() {
   return (
     <navbar>
@@ -13,16 +18,53 @@ export function Navbar() {
           <li>Gabinete de tecnologias de informacao</li>
         </ul>
       </div>
-      <div className="navbar-menu">
-        <ul>
-          <li>Inicio</li>
-          <li>Institucional</li>
-          <li>Agenda Politica</li>
-          <li>Servicos</li>
-          <li>Publicacoes</li>
-          <li>Legislacao</li>
-        </ul>
-      </div>
+      <Menu
+        className="navbar-menu"
+        data={[
+          {
+            text: 'Inicio',
+            link: '#inicio'
+          },
+          {
+            text: 'Institucional',
+            link: '#intitucional'
+          },
+          {
+            text: 'Agenda politica',
+            link: '#agenda'
+          },
+          {
+            text: 'Servicos',
+            link: '#servicos',
+            submenu: [
+              {
+                text: 'Servicos sociais',
+                link: ''
+              },
+              {
+                text: 'Suporte tecnico',
+                link: ''
+              },
+              {
+                text: 'Lista Telefonica',
+                link: ''
+              },
+              {
+                text: 'Despacho Electronico',
+                link: ''
+              }
+            ]
+          },
+          {
+            text: 'Publicacoes',
+            link: '#publicacoes'
+          },
+          {
+            text: 'Legislacao',
+            link: '#legislacao'
+          }
+        ]}
+      />
     </navbar>
   );
 }

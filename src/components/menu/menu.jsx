@@ -8,22 +8,21 @@ import './menu.css';
 export function Menu(props) {
   const {
     header,
-    data
+    data,
+    className
   } = props;
 
   const _data = data || [];
 
   return (
     <section className="app-menu-wrapper">
-      <div className="app-menu">
+      <ul className={className || 'app-menu'}>
         <p className="app-menu-header">{header || ''}</p>
         {_data.map((dataItem, i) => {
           if (isObj(dataItem)) {
-            return <ul>
-              <li key={i}>
-                <a href={dataItem.link}>{dataItem.text}</a>
-              </li>
-            </ul>;
+            return <li key={i}>
+              <a href={dataItem.link}>{dataItem.text}</a>
+            </li>;
           }
 
           if (isArray(dataItem)) {
@@ -38,7 +37,7 @@ export function Menu(props) {
 
           return '';
         })}
-      </div>
+      </ul>
     </section>
   );
 }
