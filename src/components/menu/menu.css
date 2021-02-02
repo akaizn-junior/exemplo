@@ -1,0 +1,23 @@
+.app-menu-wrapper {
+  padding: 0px 7px;
+}
+
+.app-menu {
+  background-color: #f0a61e;
+  padding: 20px 11px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.app-menu-list {
+  margin-top: 20px;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.app-menu-list :first-child {
+  color: #ffffff;
+}

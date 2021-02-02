@@ -1,0 +1,36 @@
+.info-wrapper {
+  padding: 5px;
+}
+
+.info-materias,
+.info-header {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.info-block {
+  width: 220px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px 1px #a7a7a7;
+  text-align: center;
+}
+
+.info-block img {
+  width: 100%;
+}
+
+.info-block ~ .info-block {
+  margin: 20px 0px;
+}
+
+.info-menu {
+  line-height: 24px;
+  font-size: 13px;
+  text-align: left;
+}
+
+.info-menu li ~ li {
+  border-top: 1px solid #000000;
+  padding-top: 5px;
+}
