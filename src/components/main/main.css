@@ -19,5 +19,12 @@
   border-left: 3px solid #e77102;
   padding: 5px 25px;
   background-color: #ffbe47;
+  color: #161616;
   text-align: center;
+}
+
+.main-noticias-header button:focus,
+.main-noticias-header button:hover {
+  background-color: #161616;
+  color: #ffbe47;
 }

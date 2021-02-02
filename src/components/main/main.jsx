@@ -6,7 +6,8 @@ import './main.css';
 import {
   Navbar,
   Galeria,
-  Info
+  Info,
+  Opiniao
 } from '..';
 
 export function Main() {
@@ -15,7 +16,28 @@ export function Main() {
       <Navbar />
       <div className="main-panel-wrapper">
         <section>
-          <Galeria />
+          <Galeria
+            height="500px"
+            buttonsPos="bottom"
+            name="galeria-panel-item"
+            items={[
+              <div>
+            &nbsp;
+              </div>,
+              <div>
+            &nbsp;
+              </div>,
+              <div>
+            &nbsp;
+              </div>,
+              <div>
+            &nbsp;
+              </div>,
+              <div>
+            &nbsp;
+              </div>
+            ]}
+          />
           <div className="main-noticias">
             <div className="main-noticias-header">
               <span>Os deputados a Assembleia Nacional aprovaram nesta quinta-feira, 24 de Maio</span>
@@ -25,7 +47,9 @@ export function Main() {
               <img alt="Noticias imagem" src="./assets/imagens/covidpic.png" />
             </div>
           </div>
-          <div className="main-artigos"></div>
+          <div className="main-artigos">
+            <Opiniao />
+          </div>
         </section>
         <section>
           <Info />

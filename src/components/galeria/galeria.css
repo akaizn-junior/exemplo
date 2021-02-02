@@ -1,4 +1,71 @@
 .galeria-wrapper {
   border: 1px solid #c9c9c9;
-  min-height: 400px;
+  position: relative;
+}
+
+.galeria-botoes {
+  position: absolute;
+}
+
+.galeria-botoes-bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+.galeria-botoes-top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.galeria-botoes button {
+  border: none;
+  outline: none;
+  background-color: #ffbe47;
+  color: #161616;
+  padding: 7px 12px;
+  margin: 4px;
+}
+
+.galeria-botoes button:focus,
+.galeria-botoes button:hover {
+  border: none;
+  outline: none;
+  background-color: #161616;
+  color: #ffbe47;
+}
+
+.galeria-panel-item {
+  display: none;
+  width: 100%;
+}
+
+.show-galeria-panel {
+  display: block !important;
+}
+
+/* Static IDs for now */
+
+#galeria-opiniao-item-5,
+#galeria-panel-item-1 {
+  background-color: red;
+}
+
+#galeria-opiniao-item-4,
+#galeria-panel-item-2 {
+  background-color: blue;
+}
+
+#galeria-opiniao-item-3,
+#galeria-panel-item-3 {
+  background-color: orange;
+}
+
+#galeria-opiniao-item-2,
+#galeria-panel-item-4 {
+  background-color: purple;
+}
+
+#galeria-opiniao-item-1,
+#galeria-panel-item-5 {
+  background-color: lime;
 }
