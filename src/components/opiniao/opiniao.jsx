@@ -16,8 +16,8 @@ export function Opiniao() {
         name="galeria-opiniao-item"
         items={[
           <div>
-            <p className="opiniao-header">Artigos de Opiniao</p>
-    &nbsp;
+            <img alt="Artigos de opiniao"
+              src="./assets/imagens/artigospic.png" />
           </div>,
           <div>
     &nbsp;
