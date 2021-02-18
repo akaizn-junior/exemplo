@@ -1,5 +1,5 @@
 .galeria-wrapper {
-  border: 1px solid #c9c9c9;
+  border: 1px solid #ececec;
   position: relative;
 }
 
@@ -39,6 +39,7 @@
   width: 100%;
   padding: 0 auto;
   text-align: center;
+  overflow: hidden;
 }
 
 .galeria-panel-item img {

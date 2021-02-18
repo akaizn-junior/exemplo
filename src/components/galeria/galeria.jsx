@@ -1,5 +1,6 @@
 /* @jsx h */
 import { h } from 'preact';
+import { useEffect } from 'preact/hooks';
 
 import { classNameBuilder } from '../../utils/browser';
 
@@ -28,6 +29,11 @@ export function Galeria(props) {
   } = props;
 
   const _items = items || [];
+
+  useEffect(() => {
+    console.log('mounted');
+    return () => {};
+  });
 
   const botoesC = classNameBuilder({
     'galeria-button-bottom-right': buttonsPos === 'bottom',
