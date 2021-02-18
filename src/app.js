@@ -1,7 +1,6 @@
 /* @jsx h */
 import { Fragment, h, render } from 'preact';
 import Router, { Link } from 'preact-router';
-import { createHashHistory } from 'history';
 
 // global styles
 import './app.css';
@@ -21,7 +20,8 @@ function App() {
         onChange={() => {}}
       >
         <div path="/pagina" style={{
-          height: '100vh'
+          height: '100vh',
+          textAlign: 'center'
         }}>
           <h1>Template</h1>
         </div>

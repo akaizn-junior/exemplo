@@ -1,13 +1,16 @@
 /* eslint-disable max-len */
 /* @jsx h */
 import { h } from 'preact';
+import { Link } from 'preact-router';
 
 import './navbar.css';
 
 export function Navbar() {
   return (
     <navbar className="navbar-top">
-      <h1 title="Administrações">Administrações</h1>
+      <h1 title="Administrações">
+        <Link href="/">Administrações</Link>
+      </h1>
       <div className="navbar-logo" title="Administrações">
         <img
           alt="República de Angola Insignia"
