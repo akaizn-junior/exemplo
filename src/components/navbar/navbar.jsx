@@ -12,11 +12,13 @@ export function Navbar() {
         <Link href="/">Administrações</Link>
       </h1>
       <div className="navbar-logo" title="Administrações">
-        <img
-          alt="República de Angola Insignia"
-          src="./assets/imagens/insignia.png"
-          width="100"
-        />
+        <Link href="/">
+          <img
+            alt="República de Angola Insignia"
+            src="./assets/imagens/insignia.png"
+            width="100"
+          />
+        </Link>
       </div>
       <div className="navbar-ham">
         <button
