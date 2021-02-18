@@ -9,10 +9,10 @@ export function Navbar() {
   return (
     <navbar className="navbar-top">
       <h1 title="Administrações">
-        <Link href="/">Administrações</Link>
+        <Link href="/" className="home-link">Administrações</Link>
       </h1>
       <div className="navbar-logo" title="Administrações">
-        <Link href="/">
+        <Link href="/" className="home-link">
           <img
             alt="República de Angola Insignia"
             src="./assets/imagens/insignia.png"
@@ -52,16 +52,16 @@ export function Navbar() {
           <h2>Área institucional</h2>
           <ul>
             <li>
-              <Link href="#estatuto">Estatuto orgánico</Link>
+              <Link href="/pagina">Estatuto orgánico</Link>
             </li>
             <li>
-              <Link href="#organigrama">Organigrama</Link>
+              <Link href="/pagina">Organigrama</Link>
             </li>
             <li>
-              <Link href="#quadro">Quadro de pessoal</Link>
+              <Link href="/pagina">Quadro de pessoal</Link>
             </li>
             <li>
-              <Link href="#manual">Manual de acolhimento</Link>
+              <Link href="/pagina">Manual de acolhimento</Link>
             </li>
           </ul>
         </div>
@@ -69,10 +69,10 @@ export function Navbar() {
           <h2>Agenda Política</h2>
           <ul>
             <li>
-              <Link href="#agenda">Agenda do Administrador(a)</Link>
+              <Link href="/pagina">Agenda do Administrador(a)</Link>
             </li>
             <li>
-              <Link href="#agenda">Agenda do vice-Administrador(a)</Link>
+              <Link href="/pagina">Agenda do vice-Administrador(a)</Link>
             </li>
           </ul>
         </div>
@@ -80,10 +80,10 @@ export function Navbar() {
           <h2>Serviços</h2>
           <ul>
             <li>
-              <Link href="#suporte">Suporte Técnico</Link>
+              <Link href="/pagina">Suporte Técnico</Link>
             </li>
             <li>
-              <Link href="#listas">Listas telefonicos</Link>
+              <Link href="/pagina">Listas telefonicos</Link>
             </li>
           </ul>
         </div>
@@ -91,7 +91,7 @@ export function Navbar() {
           <h2>Publicações e Legislações</h2>
           <ul>
             <li>
-              <Link href="#artigos">Artigos</Link>
+              <Link href="/pagina">Artigos</Link>
             </li>
           </ul>
         </div>

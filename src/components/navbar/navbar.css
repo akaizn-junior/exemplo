@@ -13,11 +13,11 @@
   height: 100%;
 }
 
-.navbar-top a {
+.navbar-top .home-link {
   color: #161616;
 }
 
-.navbar-top a:hover {
+.navbar-top .home-link:hover {
   text-decoration: none;
 }
 
