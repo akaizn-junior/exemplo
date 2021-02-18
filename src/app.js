@@ -1,163 +1,98 @@
 /* @jsx h */
-import { h, render } from 'preact';
+import { Fragment, h, render } from 'preact';
 
 // global styles
 import './app.css';
 
 // components
 import {
-  Main,
-  Menu
+  Navbar,
+  Galeria
 } from './components';
 
 function App() {
   return (
-    <div className="app-layout">
-      <section>
-        <Menu
-          header={'Inicio'}
-          data={[
-            [
-              {
-                text: 'Institucional',
-                link: '#intitucional'
-              },
-              {
-                text: 'OAPR',
-                link: '#oapr'
-              },
-              {
-                text: 'Estatuto organico',
-                link: '#organico'
-              },
-              {
-                text: 'Organigrama',
-                link: '#organigrama'
-              },
-              {
-                text: 'Quadro de Pessoal',
-                link: '#pessoal'
-              },
-              {
-                text: 'Quem e Quem',
-                link: '#quem'
-              },
-              {
-                text: 'Manual de acolhimento',
-                link: '#acolhimento'
-              },
-              {
-                text: 'Regulamento Interno',
-                link: '#interno'
-              }
-            ],
-            [
-              {
-                text: 'Agenda politica',
-                link: '#agenda'
-              },
-              {
-                text: 'Agenda do presidente',
-                link: '#agrenda-pres'
-              },
-              {
-                text: 'Agenda do vice-presidente',
-                link: '#agrenda-vice'
-              },
-              {
-                text: 'Agenda da 1 dama',
-                link: '#agenda-dama'
-              }
-            ],
-            [
-              {
-                text: 'Servicos',
-                link: '#servicos-sociais'
-              },
-              {
-                text: 'Suporte tecnico',
-                link: '#suporte-tecnico'
-              },
-              {
-                text: 'Lista telefonica',
-                link: '#lista-telefonica'
-              },
-              {
-                text: 'Despacho Electronico',
-                link: '#despacho'
-              }
-            ],
-            [
-              {
-                text: 'Publicacoes',
-                link: '#publicacoes'
-              },
-              {
-                text: 'Sala de imprensa',
-                link: '#sala-imprensa'
-              },
-              {
-                text: 'Artigos de opiniao',
-                link: '#artigos-opiniao'
-              },
-              {
-                text: 'Eventos e Palestras',
-                link: '#eventos-palestras'
-              },
-              {
-                text: 'Galeria',
-                link: '#galeria'
-              }
-            ],
-            [
-              {
-                text: 'Legislacao',
-                link: '#legislacao'
-              },
-              {
-                text: 'Legislacao complementar',
-                link: '#legi-comp'
-              },
-              {
-                text: 'Circular',
-                link: '#circular'
-              }
-            ],
-            [
-              {
-                text: 'Fale conosco',
-                link: '#fale-conosco'
-              }
-            ]
+    <Fragment>
+      <Navbar />
+      <main className="app-content">
+        <Galeria
+          height="350px"
+          buttonsPos="bottom"
+          name="galeria-panel-item"
+          items={[
+            <div>
+          &nbsp;
+            </div>,
+            <div>
+          &nbsp;
+            </div>,
+            <div>
+          &nbsp;
+            </div>,
+            <div>
+          &nbsp;
+            </div>,
+            <div>
+          &nbsp;
+            </div>
           ]}
         />
-        <Menu
-          data={[
-            {
-              text: 'Necrologia',
-              link: '#necrologia'
-            },
-            {
-              text: 'Aniversario',
-              link: '#aniversario'
-            },
-            {
-              text: 'Restaurante',
-              link: '#restaurante'
-            },
-            {
-              text: 'Rede social corporativa',
-              link: '#rede-social'
-            },
-            {
-              text: 'Links Uteis',
-              link: '#links'
-            }
-          ]}
-        />
-      </section>
-      <Main />
-    </div>
+      </main>
+      <footer>
+        <div className="footer-img">
+          <img alt="República de Angola" src="./assets/imagens/angola-footer.png" />
+        </div>
+        <div className="footer-lists">
+          <div className="footer-menu">
+            <h2>Área institucional</h2>
+            <ul>
+              <li>
+                <a href="#estatuto">Estatuto orgánico</a>
+              </li>
+              <li>
+                <a href="#organigrama">Organigrama</a>
+              </li>
+              <li>
+                <a href="#quadro">Quadro de pessoal</a>
+              </li>
+              <li>
+                <a href="#manual">Manual de acolhimento</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-menu">
+            <h2>Agenda Política</h2>
+            <ul>
+              <li>
+                <a href="#agenda">Agenda do Administrador(a)</a>
+              </li>
+              <li>
+                <a href="#agenda">Agenda do vice-Administrador(a)</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-menu">
+            <h2>Serviços</h2>
+            <ul>
+              <li>
+                <a href="#suporte">Suporte Técnico</a>
+              </li>
+              <li>
+                <a href="#listas">Listas telefonicos</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-menu">
+            <h2>Publicações e Legislações</h2>
+            <ul>
+              <li>
+                <a href="#artigos">Artigos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </Fragment>
   );
 }
 

@@ -3,21 +3,21 @@
   position: relative;
 }
 
-.galeria-botoes {
+.galeria-button {
   position: absolute;
 }
 
-.galeria-botoes-bottom-right {
+.galeria-button-bottom-right {
   bottom: 10px;
   right: 10px;
 }
 
-.galeria-botoes-top-left {
+.galeria-button-top-left {
   top: 10px;
   left: 10px;
 }
 
-.galeria-botoes button {
+.galeria-button button {
   border: none;
   outline: none;
   background-color: #ffbe47;
@@ -26,8 +26,8 @@
   margin: 4px;
 }
 
-.galeria-botoes button:focus,
-.galeria-botoes button:hover {
+.galeria-button button:focus,
+.galeria-button button:hover {
   border: none;
   outline: none;
   background-color: #161616;

@@ -1,33 +1,72 @@
 .navbar-top {
-  text-transform: uppercase;
-  font-size: 12px;
-  background-color: #161616;
-  color: #ffffff;
-  padding: 7px 0px;
+  background-color: #ececec;
+  display: block;
+  height: 77px;
+  position: relative;
 }
 
-.navbar-top li {
-  display: inline-block;
-  margin-left: 50px;
+.navbar-top h1 {
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  height: 100%;
 }
 
-.navbar-menu {
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: bold;
+.navbar-logo {
+  position: absolute;
+  top: 4px;
+}
+
+.navbar-ham {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.navbar-ham button span {
+  position: relative;
+  top: -2px;
+  margin-left: 4px;
+}
+
+.navbar-list {
+  position: fixed;
+  top: 0px;
+  right: 0px;
   padding: 10px;
+  background-color: #1a1a1a;
+  height: 100vh;
+  z-index: 5;
+  color: #ffffff;
+  display: none;
 }
 
-.navbar-menu li {
-  display: inline-block;
-  padding: 7px;
+.nav-menu {
+  margin-top: 25px;
 }
 
-.navbar-menu li ~ li {
-  padding: 5px 10px;
-  border-left: 1px solid #000000;
+.nav-menu ul {
+  margin-top: 9px;
 }
 
-.navbar-menu li:hover {
-  background-color: #ffbe47;
+.nav-menu li {
+  line-height: 22px;
+}
+
+.nav-menu h2 {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.nav-close-menu {
+  background: none;
+}
+
+.nav-close-menu:hover svg {
+  fill: #e7e7e7;
+}
+
+.nav-menu-open {
+  display: block;
 }

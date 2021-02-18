@@ -30,9 +30,9 @@ export function Galeria(props) {
   const _items = items || [];
 
   const botoesC = classNameBuilder({
-    'galeria-botoes-bottom-right': buttonsPos === 'bottom',
-    'galeria-botoes-top-left': buttonsPos === 'top'
-  }, 'galeria-botoes');
+    'galeria-button-bottom-right': buttonsPos === 'bottom',
+    'galeria-button-top-left': buttonsPos === 'top'
+  }, 'galeria-button');
 
   return (
     <div className="galeria-wrapper">
