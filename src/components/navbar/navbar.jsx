@@ -8,10 +8,14 @@ import './navbar.css';
 export function Navbar() {
   return (
     <navbar className="navbar-top">
-      <h1 title="Administrações">
-        <Link href="/" className="home-link">Administrações</Link>
+      <h1 title="Administração municipal de Belas">
+        <Link href="/" className="home-link">
+          <p>República de Angola</p>
+          <p>Governo Províncial de Luanda</p>
+          <p>Administração municipal de Belas</p>
+        </Link>
       </h1>
-      <div className="navbar-logo" title="Administrações">
+      <div className="navbar-logo" title="Administração municipal de Belas">
         <Link href="/" className="home-link">
           <img
             alt="República de Angola Insignia"

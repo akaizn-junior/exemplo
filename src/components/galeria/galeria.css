@@ -37,34 +37,17 @@
 .galeria-panel-item {
   display: none;
   width: 100%;
+  padding: 0 auto;
+  text-align: center;
+}
+
+.galeria-panel-item img {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .show-galeria-panel {
   display: block !important;
-}
-
-/* Static IDs for now */
-
-#galeria-opiniao-item-5,
-#galeria-panel-item-1 {
-  background-color: red;
-}
-
-#galeria-opiniao-item-4,
-#galeria-panel-item-2 {
-  background-color: blue;
-}
-
-#galeria-opiniao-item-3,
-#galeria-panel-item-3 {
-  background-color: orange;
-}
-
-#galeria-opiniao-item-2,
-#galeria-panel-item-4 {
-  background-color: purple;
-}
-
-#galeria-panel-item-5 {
-  background-color: lime;
 }

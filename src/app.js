@@ -27,24 +27,24 @@ function App() {
         </div>
         <main path="/" className="app-content">
           <Galeria
-            height="350px"
+            height="450px"
             buttonsPos="bottom"
             name="galeria-panel-item"
             items={[
               <div>
-          &nbsp;
+                <img alt="Galeria" src="./assets/imagens/belas6.jpeg" />
               </div>,
               <div>
-          &nbsp;
+                <img alt="Galeria" src="./assets/imagens/belas2.jpeg" />
               </div>,
               <div>
-          &nbsp;
+                <img alt="Galeria" src="./assets/imagens/belas3.jpeg" />
               </div>,
               <div>
-          &nbsp;
+                <img alt="Galeria" src="./assets/imagens/belas4.jpeg" />
               </div>,
               <div>
-          &nbsp;
+                <img alt="Galeria" src="./assets/imagens/belas5.jpeg" />
               </div>
             ]}
           />
