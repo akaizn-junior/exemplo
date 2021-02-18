@@ -79,3 +79,15 @@
 .nav-menu-open {
   display: block;
 }
+
+@media (max-width: 800px) {
+  .navbar-top h1 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-top h1 {
+    font-size: 11px;
+  }
+}
