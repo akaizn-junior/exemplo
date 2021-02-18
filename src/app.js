@@ -1,5 +1,7 @@
 /* @jsx h */
 import { Fragment, h, render } from 'preact';
+import Router, { Link } from 'preact-router';
+import { createHashHistory } from 'history';
 
 // global styles
 import './app.css';
@@ -14,30 +16,40 @@ function App() {
   return (
     <Fragment>
       <Navbar />
-      <main className="app-content">
-        <Galeria
-          height="350px"
-          buttonsPos="bottom"
-          name="galeria-panel-item"
-          items={[
-            <div>
+      <Router
+        history={(() => {})()}
+        onChange={() => {}}
+      >
+        <div path="/pagina" style={{
+          height: '100vh'
+        }}>
+          <h1>Template</h1>
+        </div>
+        <main path="/" className="app-content">
+          <Galeria
+            height="350px"
+            buttonsPos="bottom"
+            name="galeria-panel-item"
+            items={[
+              <div>
           &nbsp;
-            </div>,
-            <div>
+              </div>,
+              <div>
           &nbsp;
-            </div>,
-            <div>
+              </div>,
+              <div>
           &nbsp;
-            </div>,
-            <div>
+              </div>,
+              <div>
           &nbsp;
-            </div>,
-            <div>
+              </div>,
+              <div>
           &nbsp;
-            </div>
-          ]}
-        />
-      </main>
+              </div>
+            ]}
+          />
+        </main>
+      </Router>
       <footer>
         <div className="footer-img">
           <img alt="República de Angola" src="./assets/imagens/angola-footer.png" />
@@ -47,16 +59,16 @@ function App() {
             <h2>Área institucional</h2>
             <ul>
               <li>
-                <a href="#estatuto">Estatuto orgánico</a>
+                <Link href="/pagina">Estatuto orgánico</Link>
               </li>
               <li>
-                <a href="#organigrama">Organigrama</a>
+                <Link href="/pagina">Organigrama</Link>
               </li>
               <li>
-                <a href="#quadro">Quadro de pessoal</a>
+                <Link href="/pagina">Quadro de pessoal</Link>
               </li>
               <li>
-                <a href="#manual">Manual de acolhimento</a>
+                <Link href="/pagina">Manual de acolhimento</Link>
               </li>
             </ul>
           </div>
@@ -64,10 +76,10 @@ function App() {
             <h2>Agenda Política</h2>
             <ul>
               <li>
-                <a href="#agenda">Agenda do Administrador(a)</a>
+                <Link href="/pagina">Agenda do Administrador(a)</Link>
               </li>
               <li>
-                <a href="#agenda">Agenda do vice-Administrador(a)</a>
+                <Link href="/pagina">Agenda do vice-Administrador(a)</Link>
               </li>
             </ul>
           </div>
@@ -75,10 +87,10 @@ function App() {
             <h2>Serviços</h2>
             <ul>
               <li>
-                <a href="#suporte">Suporte Técnico</a>
+                <Link href="/pagina">Suporte Técnico</Link>
               </li>
               <li>
-                <a href="#listas">Listas telefonicos</a>
+                <Link href="/pagina">Listas telefonicos</Link>
               </li>
             </ul>
           </div>
@@ -86,7 +98,7 @@ function App() {
             <h2>Publicações e Legislações</h2>
             <ul>
               <li>
-                <a href="#artigos">Artigos</a>
+                <Link href="/pagina">Artigos</Link>
               </li>
             </ul>
           </div>

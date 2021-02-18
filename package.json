@@ -37,7 +37,9 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "preact": "^10.5.12"
+    "history": "^5.0.0",
+    "preact": "^10.5.12",
+    "preact-router": "^3.2.1"
   },
   "browserslist": {
     "production": [

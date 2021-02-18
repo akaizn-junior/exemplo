@@ -47,16 +47,16 @@ export function Navbar() {
           <h2>Área institucional</h2>
           <ul>
             <li>
-              <a href="#estatuto">Estatuto orgánico</a>
+              <Link href="#estatuto">Estatuto orgánico</Link>
             </li>
             <li>
-              <a href="#organigrama">Organigrama</a>
+              <Link href="#organigrama">Organigrama</Link>
             </li>
             <li>
-              <a href="#quadro">Quadro de pessoal</a>
+              <Link href="#quadro">Quadro de pessoal</Link>
             </li>
             <li>
-              <a href="#manual">Manual de acolhimento</a>
+              <Link href="#manual">Manual de acolhimento</Link>
             </li>
           </ul>
         </div>
@@ -64,10 +64,10 @@ export function Navbar() {
           <h2>Agenda Política</h2>
           <ul>
             <li>
-              <a href="#agenda">Agenda do Administrador(a)</a>
+              <Link href="#agenda">Agenda do Administrador(a)</Link>
             </li>
             <li>
-              <a href="#agenda">Agenda do vice-Administrador(a)</a>
+              <Link href="#agenda">Agenda do vice-Administrador(a)</Link>
             </li>
           </ul>
         </div>
@@ -75,10 +75,10 @@ export function Navbar() {
           <h2>Serviços</h2>
           <ul>
             <li>
-              <a href="#suporte">Suporte Técnico</a>
+              <Link href="#suporte">Suporte Técnico</Link>
             </li>
             <li>
-              <a href="#listas">Listas telefonicos</a>
+              <Link href="#listas">Listas telefonicos</Link>
             </li>
           </ul>
         </div>
@@ -86,7 +86,7 @@ export function Navbar() {
           <h2>Publicações e Legislações</h2>
           <ul>
             <li>
-              <a href="#artigos">Artigos</a>
+              <Link href="#artigos">Artigos</Link>
             </li>
           </ul>
         </div>
