@@ -37,7 +37,6 @@
 .galeria-panel-item {
   display: none;
   width: 100%;
-  padding: 0 auto;
   text-align: center;
   overflow: hidden;
 }
@@ -51,4 +50,5 @@
 
 .show-galeria-panel {
   display: block !important;
+  transition: all 1s linear;
 }

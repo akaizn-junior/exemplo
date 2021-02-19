@@ -42,7 +42,7 @@ export function Galeria(props) {
           showGaleriaPanel(name, gi + 1)();
           gi = (gi + 1) % _items.length;
         }
-      }, 15000);
+      }, 8000);
     }
   }, [isMounted]);
 
